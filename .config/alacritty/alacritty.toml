@@ -7,3 +7,6 @@ style = "Italic"
 
 [font.normal]
 family = "iMWritingMono Nerd Font Mono"
+
+[font]
+size = 11

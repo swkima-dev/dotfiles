@@ -24,3 +24,13 @@ fi
 if type bat >/dev/null 2>&1; then
   alias b='bat'
 fi
+
+eval "$(zoxide init zsh)"
+
+. "$HOME/.local/bin/env"
+
+# (A) デフォルトのパスを直接指定する方法
+export PATH=$PATH:$HOME/go/bin
+
+# (B) go env を使って自動的にパスを指定する方法（推奨）
+export PATH=$PATH:$(go env GOPATH)/bin
